@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@drawable/lawrencium">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="640px"
+        android:layout_height="400px"
+        android:layout_marginLeft="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/recipesbookanimation" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animationView"
+        android:layout_alignStart="@+id/animationView"
+        android:layout_alignEnd="@+id/animationView"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="@font/lobstertwo"
+        android:stateListAnimator="@android:animator/fade_in"
+        android:text="Recipes Book"
+        android:textColor="@color/premium_purple_100"
+        android:textSize="30dp" />
+
+</RelativeLayout>

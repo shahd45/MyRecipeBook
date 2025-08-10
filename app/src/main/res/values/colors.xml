@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="splashBackground">#FFEBEE</color>
+    <color name="blue">#3394D5</color>
+    <color name="red">#C40513</color>
+    <color name="green">#81D4FA</color>
+    <color name="gray">#80000000</color>
+    <color name="shrine_pink_100">#fedbd0</color>
+    <color name="shrine_pink_900">#442c2e</color>
+    <color name="shrine_pink_50">#feebe7</color>
+    <color name="background">#201C56</color>
+    <color name="buttn">#938DFB</color>
+    <color name="premium_purple_900">#1a1531</color>
+    <color name="premium_purple_100">#B0B0CF</color>
+    <color name="premium_purple_50">#E4E0EE</color>
+    <color name="appname">#FFB0AB</color>
+    <color name="splashbg">#291528</color>
+
+</resources>

@@ -1,0 +1,36 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/drawable/ic_icons8_home.xml" value="0.1345" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/drawable/ic_istockphoto_1217629948_612x612.xml" value="0.1345" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1345" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/drawable/rounded.xml" value="0.227" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/layout/add_ingredient.xml" value="0.264" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/layout/fragment_details.xml" value="0.20350877192982456" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/layout/fragment_user.xml" value="0.152" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/layout/grid_item.xml" value="0.1" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/layout/ingredient_item.xml" value="0.259375" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/layout/main.xml" value="0.259375" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/layout/new_recipe.xml" value="0.264" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/layout/recipe_grid_item.xml" value="0.2" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/layout/recipe_item.xml" value="0.4" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/layout/recipe_list_item.xml" value="0.2" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/layout/splashfile.xml" value="0.264" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/menu/bar.xml" value="0.1" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/menu/delete_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/menu/exit.xml" value="0.1" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/menu/sittings.xml" value="0.1" />
+        <entry key="..\:/Users/Alaa Jbareen/AndroidStudioProjects/RecipeBook/app/src/main/res/xml/preference_screen.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipes>
+	<recipe>
+		<name>Basic Crepes</name>
+		<anthem>basiccrepes</anthem>
+		<category>breakfast</category>
+		<time>30 mins</time>
+		<servings>4 servings (8 crepes)</servings>
+		<ingredients>1 cup all-purpose flour
+2 eggs
+1/2 cup milk
+1/2 cup water
+1/4 teaspoon salt
+2 tablespoons butter, melted</ingredients>
+		<instructions>Step 1
+In a large mixing bowl, whisk together the flour and the eggs.
+Gradually add in the milk and water, stirring to combine.
+Add the salt and butter; beat until smooth.
+Step 2
+Heat a lightly oiled griddle or frying pan over medium high heat.
+Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each crepe.
+Tilt the pan with a circular motion so that the batter coats the surface evenly.
+Step 3
+Cook the crepe for about 2 minutes, until the bottom is light brown.
+Loosen with a spatula, turn and cook the other side. Serve hot.
+		</instructions>
+	</recipe>
+	<recipe>
+		<name>Vegetarian Chickpea Sandwich Filling</name>
+		<anthem>vegetarianchickpeasandwichfilling</anthem>
+		<category>lunch</category>
+		<time>20 mins</time>
+		<servings>3 servings</servings>
+		<ingredients>1 (19 ounce) can garbanzo beans, drained and rinsed
+1 stalk celery, chopped
+½ onion, chopped
+1 tablespoon mayonnaise
+1 tablespoon lemon juice
+1 teaspoon dried dill weed
+salt and pepper to taste</ingredients>
+		<instructions>Step 1
+Drain and rinse chickpeas.
+Pour chickpeas into a medium size mixing bowl and mash with a fork.
+Mix in celery, onion, mayonnaise (to taste), lemon juice, dill, salt and pepper to taste.
+		</instructions>
+	</recipe>
+	<recipe>
+		<name>Italian Spaghetti Sauce with Meatballs</name>
+		<anthem>italianspaghettisaucewithmeatballs</anthem>
+		<category>Dinner</category>
+		<time>2 hrs 20 mins</time>
+		<servings>6 servings</servings>
+		<ingredients>1 pound lean ground beef
+1 cup fresh bread crumbs
+1 tablespoon dried parsley
+1 tablespoon grated Parmesan cheese
+¼ teaspoon ground black pepper
+⅛ teaspoon garlic powder
+1 egg, beaten
+¾ cup chopped onion
+5 cloves garlic, minced
+¼ cup olive oil
+2 (28 ounce) cans whole peeled tomatoes
+2 teaspoons salt
+1 teaspoon white sugar
+1 bay leaf
+1 (6 ounce) can tomato paste
+¾ teaspoon dried basil
+½ teaspoon ground black pepper</ingredients>
+		<instructions>Step 1
+In a large bowl, combine ground beef, bread crumbs, parsley, Parmesan, 1/4 teaspoon black pepper, garlic powder and beaten egg.
+Mix well and form into 12 balls. Store, covered, in refrigerator until needed.
+Step 2
+In a large saucepan over medium heat, saute onion and garlic in olive oil until onion is translucent.
+Stir in tomatoes, salt, sugar and bay leaf.
+Cover, reduce heat to low, and simmer 90 minutes.
+Stir in tomato paste, basil, 1/2 teaspoon pepper and meatballs and simmer 30 minutes more.
+		</instructions>
+	</recipe>
+	<recipe>
+		<name>The Best Banana Pudding</name>
+		<anthem>thebestbananapudding</anthem>
+		<category>Dessert</category>
+		<time>25 mins</time>
+		<servings>20 servings</servings>
+		<ingredients>1 (5 ounce) package instant vanilla pudding mix
+2 cups cold milk
+1 (14 ounce) can sweetened condensed milk
+1 tablespoon vanilla extract
+1 (12 ounce) container frozen whipped topping, thawed
+1 (16 ounce) package vanilla wafers
+14 bananas, sliced</ingredients>
+		<instructions>Step 1
+In a large mixing bowl, beat pudding mix and milk 2 minutes.
+Blend in condensed milk until smooth.
+Stir in vanilla and fold in whipped topping.
+Layer wafers, bananas and pudding mixture in a glass serving bowl.
+Chill until serving.
+		</instructions>
+	</recipe>
+</recipes>
