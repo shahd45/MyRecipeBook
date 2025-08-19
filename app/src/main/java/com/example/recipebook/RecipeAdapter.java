@@ -31,26 +31,26 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
         this.context = context;
         this.listener = listener;
         sp = PreferenceManager.getDefaultSharedPreferences(context);
-        //add all the MVVM DONE***********
+
         this.recipeViewModel = recipeViewModel;
         this.recipeViewModel.setHome(true);
-        //add the observers
+
+        // ملاحظة: نراقب التغييرات من الـ ViewModel
         recipeViewModel.getRecipes(context).observe((LifecycleOwner) context, recipeObserver);
         recipeViewModel.getSelectedRecipe().observe((LifecycleOwner) context, observeSelectedIndex);
-
     }
 
+    // ملاحظة: لما تتغير الوصفات بالـ ViewModel
     Observer<ArrayList<Recipe>> recipeObserver = new Observer<ArrayList<Recipe>>() {
         @Override
         public void onChanged(ArrayList<Recipe> recipes) {
-            //after the get retuned here
-            Log.i("RecipeAdapter", "Get1");
+            Log.i("RecipeAdapter", "Recipes updated from ViewModel");
             allRecipes = recipes;
+            notifyDataSetChanged();
         }
     };
 
-    // OBSERVE
-    // Here we will observe and update the selected row
+    // ملاحظة: لما يتغير الإندكس المختار
     Observer<Integer> observeSelectedIndex = new Observer<Integer>() {
         @Override
         public void onChanged(Integer index) {
@@ -64,14 +64,16 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
         View itemView;
-        /*Check if Grid checked*/
+
+        // إذا Grid أو List
         grid = sp.getBoolean("grid", true);
-        if (grid)
+        if (grid) {
             itemView = inflater.inflate(R.layout.recipe_grid_item, parent, false);
-        else
+        } else {
             itemView = inflater.inflate(R.layout.recipe_list_item, parent, false);
-        ViewHolder viewHolder = new ViewHolder(itemView);
-        return viewHolder;
+        }
+
+        return new ViewHolder(itemView);
     }
 
     @Override
@@ -81,7 +83,13 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
 
     @Override
     public int getItemCount() {
-        return allRecipes.size();
+        return (allRecipes == null) ? 0 : allRecipes.size();
+    }
+
+    // 🔹 دالة جديدة لتحديث البيانات من API أو أي مصدر خارجي
+    public void setData(ArrayList<Recipe> newRecipes) {
+        this.allRecipes = newRecipes;
+        notifyDataSetChanged();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -95,42 +103,48 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
             super(itemView);
             this.itemView = itemView;
             itemView.setClickable(true);
-            /*setOnclickListener for the itemView*/
             itemView.setOnClickListener(this);
+
             if (grid) {
                 imageView = itemView.findViewById(R.id.recipe_grid_image);
                 tvName = itemView.findViewById(R.id.recipe_grid_name);
-
             } else {
                 imageView = itemView.findViewById(R.id.recipe_image);
                 tvName = itemView.findViewById(R.id.recipe_name);
                 tvTime = itemView.findViewById(R.id.recipe_time);
                 tvServings = itemView.findViewById(R.id.recipe_servings);
             }
+
             tvName.setClickable(true);
-            /*listener of the adapter*/
         }
 
         public void bindData(final int position) {
             final Recipe recipe = allRecipes.get(position);
             tvName.setText(recipe.getName());
+
             if (!grid) {
                 tvTime.setText(recipe.getTime());
                 tvServings.setText(recipe.getServings());
             }
-            int imageResource = context.getResources().getIdentifier(recipe.getImage(), "drawable", context.getPackageName());
+
+            // تحميل الصورة من drawable
+            int imageResource = context.getResources().getIdentifier(
+                    recipe.getImage(),
+                    "drawable",
+                    context.getPackageName()
+            );
             imageView.setImageResource(imageResource);
-            /*set item selected Highlighting*/
         }
 
         @Override
         public void onClick(View view) {
             if (getAdapterPosition() == RecyclerView.NO_POSITION) return;
-            // Updating old as well as new positions
+
             notifyItemChanged(selectPos);
             selectPos = getAdapterPosition();
             recipeViewModel.setSelectedRecipe(selectPos);
             notifyDataSetChanged();
+
             listener.onRecipeClick(selectPos);
         }
     }

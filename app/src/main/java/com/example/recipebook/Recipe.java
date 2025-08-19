@@ -3,6 +3,7 @@ package com.example.recipebook;
 import java.util.ArrayList;
 
 public class Recipe {
+    private int id;   // رقم الوصفة (DummyJSON)
     private String image;
     private String name;
     private String category;
@@ -10,6 +11,19 @@ public class Recipe {
     private String servings;
     private ArrayList<String> ingredients;
     private String instructions;
+
+    // علشان نميز إذا الوصفة محلية أو من API
+    private boolean localOnly = false;
+
+    // ==== Getters & Setters ====
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -65,5 +79,13 @@ public class Recipe {
 
     public String getInstructions() {
         return instructions;
+    }
+
+    public boolean isLocalOnly() {
+        return localOnly;
+    }
+
+    public void setLocalOnly(boolean localOnly) {
+        this.localOnly = localOnly;
     }
 }
